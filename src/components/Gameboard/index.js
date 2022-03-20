@@ -61,7 +61,7 @@ function Gameboard({ won, handleWin, startNewGame }) {
   }
 
     function validateGuess() {
-        console.log(answer)
+       
         scrollToSection.current.scrollIntoView({ behavior: "smooth" });
    
     const testGuess = [...currentGuess];
