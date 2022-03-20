@@ -103,7 +103,7 @@ function Gameboard({ won, handleWin, startNewGame }) {
   }, [currentScore]);
     
     useEffect(() => {
-        if(guesses.length > 3) {setUsedAllTurns(true)}
+        if(guesses.length > 11) {setUsedAllTurns(true)}
     }, [guesses])
 
   return (
