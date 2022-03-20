@@ -1,0 +1,299 @@
+:root {
+--main-font: 'Titillium Web', sans-serif;
+--colour1: #604083;;
+--colour2: #c05a87;
+--colour3:  rgb(175, 175, 175);
+}
+
+.App {
+      text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+       font-family: var(--main-font);
+       background-color: black;
+       background-image: url('../../images/imagedark.jpg');
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+       
+       color: white;
+
+}
+
+.introduction button {
+     font-family: var(--main-font);
+     width: 40%;
+     margin: 1rem auto;
+     padding: 1rem;
+     border-radius: 5px;
+     background-color: var(--colour2);
+     font-size: 1rem;
+}
+
+.introduction {
+  display: flex;
+  flex-direction: column;
+width: 50%;
+
+}
+
+.introduction h1 {
+  margin: 1rem;
+  font-size: 2.5rem;
+}
+
+.introduction h2 {
+  margin: 1rem;
+  font-size: 1.8rem;
+}
+
+.introduction p {
+  margin: 0.5rem;
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+.colourBlock {
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    width: 40%;
+    margin:0 auto;
+}
+
+.colourBlock h2 {
+    margin: 0.5rem;
+}
+
+.colours {
+    display: flex;
+}
+
+.wholeGameBoard {
+border: 2px solid var(--colour3);
+width: 50%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: var(--colour1);
+padding: 1rem;
+border-radius: 5px;
+}
+
+.wholeGuessBlock {
+border: 2px solid var(--colour3);
+width: 80%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: var(--colour1);
+padding: 1rem;
+margin: 1rem;
+border-radius: 5px;
+}
+
+.answerHeader {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.startAgainButton {
+  background-color: var(--colour2);
+  border-radius: 5px;
+  padding: 1rem;
+  float: left;
+  margin: 1rem;
+}
+
+.answersFailedBlock {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.answers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+width: 60%;
+border: 2px solid var(--colour3);
+border-radius: 5px;
+padding: 1rem;
+background-color: var(--colour2);
+}
+
+.hidden {
+  display: flex;
+  width: 60%;
+border: 2px solid var(--colour3);
+padding: 1rem;
+width: 55%;
+margin: 0 auto;
+border-radius: 5px;
+background-color: var(--colour2);
+color: black;
+}
+
+.hidden h6 {
+  margin: 0;
+  font-size: 1rem;
+   font-family: var(--main-font);
+   font-weight: normal;
+}
+
+.currentGuess {
+  display: flex;
+}
+
+.currentGuessWholeRow {
+  display: flex;
+  margin: 0.5rem;
+}
+
+.guessButton {
+  width: 4rem;
+   font-family: var(--main-font);
+  margin-left: 1rem;
+  background-color:var(--colour2);
+  border-radius: 5px;
+}
+
+.previousGuesses {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.guessScore {
+  display: flex;
+  flex-wrap: wrap;
+  width: 4rem;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.guessColours {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.guessWholeRow {
+  display: flex;
+  margin: 0.5rem;
+}
+
+.red,
+.orange,
+.yellow,
+.green,
+.blue,
+.purple,
+.black,
+.white,
+.grey {
+  border-radius: 50%;
+  border: 1px solid var(--colour3);
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0.5rem;
+}
+
+.red {
+  background-color: red;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.black {
+  background-color: black;
+}
+
+.white {
+  background-color: white;
+}
+
+.grey {
+  background-color: var(--colour3);
+}
+
+.redscore,
+.whitescore,
+.xscore {
+  border-radius: 50%;
+  border: 1px solid var(--colour3);
+  width: 0.8rem;
+  height: 0.8rem;
+  margin: 0.3rem;
+}
+
+.redscore {
+  background-color: red;
+}
+
+.whitescore {
+  background-color: white;
+}
+
+.xscore {
+  background-color: var(--colour3);
+}
+
+
+@media only screen and (max-width: 950px) {
+
+.introduction {
+  width: 90%;
+}
+
+.introduction h1 {
+  font-size: 2rem;
+}
+
+.introduction h2 {
+  font-size: 1.5rem;
+}
+
+.introduction p {
+font-size: 1rem;
+}
+
+.introduction button {
+  width: 70%;
+}
+
+.wholeGameBoard {
+  width: 90%;
+}
+
+}

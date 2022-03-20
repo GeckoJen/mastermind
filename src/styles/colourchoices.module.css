@@ -1,0 +1,59 @@
+.colourBlock {
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 3px solid grey; */
+    padding: 1rem;
+    width: 40%;
+    margin: 1rem auto;
+}
+
+.colourBlock h2 {
+    margin: 0.5rem;
+}
+
+.colours {
+    display: flex;
+}
+
+.colour1, .colour2, .colour3, .colour4, .colour5, .colour6, .colour7, .colour8 {
+    border-radius: 50%;
+    border: 1px solid grey;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0.5rem;
+}
+
+.colour1 {
+    background-color: red;
+}
+
+.colour2 {
+    background-color: orange;
+}
+
+.colour3 {
+    background-color: yellow;
+}
+
+.colour4 {
+    background-color: green;
+}
+
+.colour5 {
+    background-color: blue;
+}
+
+.colour6 {
+    background-color: purple;
+}
+
+.colour7 {
+    background-color: black;
+}
+
+.colour8 {
+    background-color: white;
+}
